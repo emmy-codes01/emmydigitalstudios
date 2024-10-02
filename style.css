@@ -1,0 +1,431 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Syne";
+  transition: 0.4s;
+  scroll-behavior: smooth;
+}
+:root {
+  --hover-color: rgb(219, 219, 219);
+  --main-purple-color: rgb(27, 27, 28);
+  --text-padding: 3px 7px 3px 7px;
+  --git-hover: #e9e9e9;
+  --light-font-weight: 200;
+  --background-orange-color: rgb(251, 149, 77);
+  --green-color: rgb(196, 240, 139);
+}
+#home {
+  margin: 2rem;
+  width: 95%;
+  height: 100vh;
+  border-radius: 2rem;
+  background-image: url(./imgs/background.png);
+  align-items: center;
+  margin-left: 2.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 2rem 0.5rem 1rem ; /* Padding for the header content */
+  z-index: 1000; /* Ensure the header is above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #121212;
+  gap: 10rem;
+}
+
+.git {
+  display: inline-flex;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 20px;
+  border: none;
+}
+.git i {
+  transform: rotate(45deg);
+  font-size: larger;
+}
+.git:hover {
+  background-color: var(--git-hover);
+}
+
+header .logo {
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: var(--hover-color);
+  padding: 3px 7px 3px 7px;
+  border-radius: 0.4rem;
+  color: #000;
+}
+
+.hero {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+.hero h1 {
+  font-weight: 400;
+  font-size: 55px;
+}
+.hero .digitalpartner {
+  color: #fff;
+}
+.hero p {
+  font-weight: 400;
+  font-size: 20px;
+  word-spacing: 4px;
+  line-height: 30px;
+  margin-top: -3rem;
+  color: #fff;
+}
+/* 
+.hl {
+  position: relative;
+  display: inline-block;
+  padding: 0 50px;
+  background-image: url("./imgs/22.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 18px;
+  color: var(--background-orange-color);
+} */
+/* 
+.typing-container {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    display: inline-block;
+} */
+/* .typing-text {
+  display: inline-block;
+  min-height: 3em; 
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 800px;
+  text-align: left;
+} */
+/* 
+.typing-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#one {
+  background-color: var(--background-orange-color);
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 20px;
+  border: none;
+  display: inline-flex;
+}
+#two {
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 20px;
+  border: 1.5px solid #fff;
+}
+
+.cta a i {
+  display: inline-block;
+  transform: rotate(45deg);
+  font-size: 20px;
+}
+
+.arrow {
+  font-size: px; /* Adjust the arrow size */
+  margin-right: 8px; /* Space between the arrow and text */
+  transform: translateY(3px); /* Adjust the vertical alignment of the arrow */
+}
+#one:hover {
+  background-color: var(--git-hover);
+}
+#two:hover {
+  background-color: #2f2f2f;
+}
+
+.trust {
+  margin-top: 6rem;
+}
+.trust p {
+  font-weight: var(--light-font-weight);
+  font-size: 13px;
+}
+.clc {
+  margin-top: -3rem;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+.clc img {
+  width: 180px;
+  color: #fff;
+}
+
+.clc .metech {
+  width: 190px;
+}
+
+/* MOBILE VERSION MOBILE VERSION MOBILE VERSION MOBILE VSERSION */
+
+@media (max-width: 720px) {
+  body {
+    background-color: #e8e8e8;
+  }
+  #home {
+    width: 100%;
+    border-radius: 0rem;
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    gap: 2rem;
+    justify-content: space-between;
+
+  }
+  header .logo {
+    color: #ffffff;
+    margin-top: -0.5rem;
+  }
+  .git {
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #000;
+    padding: 2rem;
+    margin: 2rem;
+    position: absolute;
+    min-width: 170px;
+    margin-left: 8.9rem;
+    overflow: auto;
+    z-index: 1;
+    display: none;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 5.9rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .clc {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .clc img {
+    width: 50px;
+  }
+
+  .hero .digitalpartner {
+    font-size: 15px;
+    color: #fff;
+    margin: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+  .hero .typing-text {
+    text-align: left;
+    font-weight: 750;
+    color: var(--background-orange-color);
+    font-size: 40px;
+    margin: 1.5rem;
+  }
+  .typing-text span {
+    color: #fff;
+  }
+
+  .hero p {
+    margin: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 15px;
+    line-height: normal;
+  }
+  .cta {
+    font-size: small;
+  }
+  .cta #one {
+    text-align: left;
+    margin-left: -9rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-size: 15px;
+    background-color: var(--green-color);
+    color: #121212;
+  }
+  #one i {
+    margin-right: px;
+  }
+  #two {
+    display: none;
+  }
+  
+  header nav ul {
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #121212;
+    padding: 2rem;
+    margin: 2rem;
+    position: absolute;
+    min-width: 100px;
+    margin-left: 8.9rem;
+    overflow: auto;
+    z-index: 1;
+    display: none;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  header nav {
+    line-height: 35px;
+    
+  }
+
+  .menu {
+    margin-top: -0.7rem;
+    display: inline-block;
+    color: #2f2f2f;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    border-radius: 230px;
+    font-size: 30px;
+    background-color: #e8e8e8;
+    margin-right: -1rem;
+    font-size: 25px;
+  } 
+  .menu i {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    display: inline-block;
+}
+
+.menu.animate-menu i {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+.menu.animate-close i {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+.trust p {
+  font-size: 10px;
+  display: none;
+}
+/* Container for the marquee */
+.marquee {
+  width: 100%; /* Set to your desired width */
+  overflow: hidden; /* Hide anything outside the container */
+  position: relative;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Inner container for the images */
+.marquee-content {
+  display: inline-block;
+  animation: marquee 10s linear infinite; /* Adjust speed (10s) */
+}
+
+/* Style the images */
+.marquee img {
+  width: 200px; /* Adjust the image width */
+  height: auto;
+  margin-right: 20px; /* Spacing between images */
+}
+
+/* Keyframes for the marquee effect */
+@keyframes marquee {
+  0% {
+      transform: translateX(100%); /* Start the content off the right */
+  }
+  100% {
+      transform: translateX(-100%); /* Move the content off the left */
+  }
+}/* Container for the marquee */
+
+/* Container for the marquee */
+/* Container for the marquee */
+.marquee {
+  width: 100%; /* Set to your desired width */
+  overflow: hidden; /* Hide anything outside the container */
+  position: relative;
+  white-space: nowrap; /* Prevent line breaks */
+  margin-top: -6rem;
+  opacity: 50%; /* Fully visible */
+}
+
+/* Inner container for the images */
+.marquee-content {
+  display: inline-block;
+  animation: marquee 15s linear infinite; /* Adjust speed (15s) */
+}
+
+/* Style the images */
+.marquee img {
+  width: 150px; /* Adjust the image width */
+  height: auto;
+  margin-right: 20px; /* Spacing between images */
+}
+
+/* Keyframes for the marquee effect */
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Start from the very beginning */
+  }
+  100% {
+    transform: translateX(-100%); /* Move the content off the left */
+  }
+}
+
+  
+}
