@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../uicons-solid-straight"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EmmyDznz.co"
+	}
+}
