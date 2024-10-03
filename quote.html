@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Full Service studio for both startups & Established businesses</title>
 
     <link rel="stylesheet" href="quote.css">
     <!-- FONTS FONTS FONTS FONTS FONTS FONTS FONTS -->
@@ -37,7 +37,8 @@
             </div>
             <nav>
                 <ul class="drop" id="drop">
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#problems">Solutions</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
@@ -54,37 +55,28 @@
 
         </header>
         <!-- <a href="home.html" id="back"><i class='bx bx-up-arrow-alt'></i> Back </a> -->
+        <div class="hero">
+            <h1 class="typing-text">Bring your vision <span>&</span> idea to life with us <span>.</span></h1>
+        </div>
+
         <center>
-            <form action="">
-                <input type="text" placeholder="Full name / Company name" > <br> <br>
-                <input type="email" placeholder="Email" > <br> <br>
-                <select name="how" id="select">
-                    <option value="" disabled selected hidden>How did you hear about us</option>
-                    <option value="LinkedIn">Google Search</option>
-                    <option value="LinkedIn">LinkedIn</option>
-                    <option value="LinkedIn">Instagram</option>
-                    <option value="LinkedIn">Facebook</option>
-                    <option value="LinkedIn">Email</option>
-                    <option value="LinkedIn">Blog</option>
-                    <option value="LinkedIn">A friend</option>
-                    <option value="LinkedIn">Other</option>
-                </select> <br> <br>
-                <textarea type="text" name="userInput" id="userInput" placeholder="Tell us about your project..."> <br>
-                <br> <select name="budget" id="budget">
-                    <option value="" disabled selected hidden>What is your budget</option>
-                    <option value="LinkedIn">$100 - $500</option>
-                    <option value="LinkedIn">$1000 - $5000</option>
-                    <option value="LinkedIn">$10,000+</option>
-                    <option value="LinkedIn">Not sure</option>
-    
-                </select> <br>
+            <form action="/" method="post">
+                <label for="name" id="l1">Full Name / Company name <span>*</span> </label> <br>
+                <input type="text" placeholder="Full name / Company name" required+""> <br> <br>
+                <label for="email" id="l2">Email <span>*</span> </label> <br>
+                <input type="email" placeholder="Email"> <br> <br>
+
+                <label for="project" id="l3"> Tell us about your project <span>*</span> </label> <br>
+                <textarea type="text" name="userInput" id="project"
+                    placeholder="Tell us about your project..."> </textarea><br>
+                <br>
             </form>
         </center>
 
-     
+
         <div class="quote">
             <div class="cta" id="cta">
-                <a href="#" id="one"><i class='bx bx-up-arrow-alt'></i> Get a free Quote </a>
+                <button type="submit" id="one"><i class='bx bx-up-arrow-alt'></i> submit </button>
                 <a href="" id="two">Pricing plans</a>
             </div>
 

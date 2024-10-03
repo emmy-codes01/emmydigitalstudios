@@ -1,4 +1,4 @@
-@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +35,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 1.5rem 2rem 0.5rem 1rem ; /* Padding for the header content */
+  padding: 1.5rem 2rem 0.5rem 1rem; /* Padding for the header content */
   z-index: 1000; /* Ensure the header is above other elements */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   display: flex;
@@ -221,15 +221,18 @@ nav ul li a:hover {
     border-radius: 0rem;
     padding: 0;
     margin: 0;
+    margin-top: -2rem;
+    height: 115vh;
   }
   header {
     gap: 2rem;
     justify-content: space-between;
-
+    position: fixed;
   }
   header .logo {
     color: #ffffff;
     margin-top: -0.5rem;
+    font-size: 13px;
   }
   .git {
     display: none;
@@ -251,12 +254,13 @@ nav ul li a:hover {
     margin-left: 5.9rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
-  
-  .clc {
+
+  .marquee-content {
     display: flex;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: -1.5rem;
   }
 
   .clc img {
@@ -264,13 +268,16 @@ nav ul li a:hover {
   }
 
   .hero .digitalpartner {
-    font-size: 15px;
-    color: #fff;
+    font-size: 10px;
+    color: #121212;
     margin: 1.5rem;
+    font-size: small;
     text-align: left;
-    margin-bottom: 1rem;
-    border: 1px solid #fff;
+    margin-bottom: -1rem;
+    border: none;
+    background-color: #e8e8e8;
     border-radius: 50px;
+    width: 180px;
     padding: 0.5rem 0 0.5rem 1rem;
   }
   .hero .typing-text {
@@ -296,11 +303,12 @@ nav ul li a:hover {
   }
   .cta #one {
     text-align: left;
-    margin-left: -9rem;
+    margin-left: -12rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    font-size: 15px;
+    font-size: 13px;
     background-color: var(--green-color);
     color: #121212;
+    margin-top: -1rem;
   }
   #one i {
     margin-right: px;
@@ -308,7 +316,7 @@ nav ul li a:hover {
   #two {
     display: none;
   }
-  
+
   header nav ul {
     flex-direction: column;
     gap: 2rem;
@@ -329,9 +337,11 @@ nav ul li a:hover {
 
   header nav {
     line-height: 35px;
-    
   }
-
+  .hero {
+    margin-top: rem;
+    padding-top: 3.5rem;
+  }
   .menu {
     margin-top: -0.7rem;
     display: inline-block;
@@ -342,90 +352,179 @@ nav ul li a:hover {
     background-color: #e8e8e8;
     margin-right: -1rem;
     font-size: 25px;
-  } 
+  }
   .menu i {
     transition: transform 0.4s ease, opacity 0.4s ease;
     display: inline-block;
-}
+  }
 
-.menu.animate-menu i {
+  .menu.animate-menu i {
     transform: rotate(180deg);
     opacity: 0;
-}
+  }
 
-.menu.animate-close i {
+  .menu.animate-close i {
     transform: rotate(0deg);
     opacity: 1;
-}
+  }
 
-.trust p {
-  font-size: 10px;
-  display: none;
-}
-/* Container for the marquee */
-.marquee {
-  width: 100%; /* Set to your desired width */
-  overflow: hidden; /* Hide anything outside the container */
-  position: relative;
-  white-space: nowrap; /* Prevent line breaks */
-}
+  .trust p {
+    font-size: 12px;
+    color: #5f5f5f;
+    margin-left: 1.8rem;
+    margin-bottom: 5rem;
+    margin-top: -3rem;
+  }
+  /* Container for the marquee */
+  .marquee {
+    width: 100%; /* Set to your desired width */
+    overflow: hidden; /* Hide anything outside the container */
+    position: relative;
+    white-space: nowrap; /* Prevent line breaks */
+  }
 
-/* Inner container for the images */
-.marquee-content {
-  display: inline-block;
-  animation: marquee 10s linear infinite; /* Adjust speed (10s) */
-}
+  /* Inner container for the images */
+  .marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Adjust speed (10s) */
+  }
 
-/* Style the images */
-.marquee img {
-  width: 200px; /* Adjust the image width */
-  height: auto;
-  margin-right: 20px; /* Spacing between images */
-}
+  /* Style the images */
+  .marquee img {
+    width: 200px; /* Adjust the image width */
+    height: auto;
+    margin-right: 20px; /* Spacing between images */
+  }
 
-/* Keyframes for the marquee effect */
-@keyframes marquee {
-  0% {
+  /* Keyframes for the marquee effect */
+  @keyframes marquee {
+    0% {
       transform: translateX(100%); /* Start the content off the right */
-  }
-  100% {
+    }
+    100% {
       transform: translateX(-100%); /* Move the content off the left */
+    }
+  } /* Container for the marquee */
+
+  /* Container for the marquee */
+  /* Container for the marquee */
+  .marquee {
+    width: 100%; /* Set to your desired width */
+    overflow: hidden; /* Hide anything outside the container */
+    position: relative;
+    white-space: nowrap; /* Prevent line breaks */
+    margin-top: -6rem;
+    opacity: 50%; /* Fully visible */
   }
-}/* Container for the marquee */
 
-/* Container for the marquee */
-/* Container for the marquee */
-.marquee {
-  width: 100%; /* Set to your desired width */
-  overflow: hidden; /* Hide anything outside the container */
-  position: relative;
-  white-space: nowrap; /* Prevent line breaks */
-  margin-top: -6rem;
-  opacity: 50%; /* Fully visible */
-}
-
-/* Inner container for the images */
-.marquee-content {
-  display: inline-block;
-  animation: marquee 15s linear infinite; /* Adjust speed (15s) */
-}
-
-/* Style the images */
-.marquee img {
-  width: 150px; /* Adjust the image width */
-  height: auto;
-  margin-right: 20px; /* Spacing between images */
-}
-
-/* Keyframes for the marquee effect */
-@keyframes marquee {
-  0% {
-    transform: translateX(0); /* Start from the very beginning */
+  /* Inner container for the images */
+  .marquee-content {
+    display: inline-block;
+    animation: marquee 15s linear infinite; /* Adjust speed (15s) */
   }
-  100% {
-    transform: translateX(-100%); /* Move the content off the left */
-  }
-}
 
-  
+  /* Style the images */
+  .marquee img {
+    width: 150px; /* Adjust the image width */
+    height: auto;
+    margin-right: 20px; /* Spacing between images */
+  }
+
+  /* Keyframes for the marquee effect */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start from the very beginning */
+    }
+    100% {
+      transform: translateX(-100%); /* Move the content off the left */
+    }
+  }
+
+  form label span {
+    color: var(--background-orange-color);
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1rem;
+    line-height: 1px;
+    margin-left: 1rem;
+  }
+  .services p {
+    font-size: 10px;
+    justify-content: space-between;
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 10px;
+    margin: 10px;
+  }
+
+  /* SECTION 2 */
+  .problems {
+    height: 100vh;
+    background-color: #e8e8e8;
+  }
+  .problems .hero {
+    margin-top: -3rem;
+  }
+  .problems .hero .typing-text {
+    text-align: left;
+    font-weight: 750;
+    color: #121212;
+    font-size: 30px;
+    margin: 1.2rem;
+  }
+  .problems .hero .typing-text span {
+    color: var(--background-orange-color);
+  }
+  .problems .hero .why {
+    color: #121212;
+    font-size: 16px;
+  }
+  .p {
+    padding: 1rem;
+    border-radius: 0.9rem;
+    border: 1px solid #121212;
+    margin: 1.5rem;
+  }
+  .p .phead {
+    font-size: 12px;
+    background-color: red;
+    color: #e8e8e8;
+    padding: 5px;
+    width: 67px;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-bottom: 12px;
+  }
+  .p h3 {
+    margin-bottom: 8px;
+  }
+  .s {
+    padding: 1rem;
+    border-radius: 0.9rem;
+    border: 1px solid #121212;
+    margin: 1.5rem;
+  }
+  .s .phead {
+    font-size: 12px;
+    background-color: var(--green-color);
+    color: #121212;
+    padding: 5px;
+    width: 65px;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-bottom: 12px;
+  }
+  .s h3 {
+    margin-bottom: 8px;
+  }
+  .pands i {
+    font-size: 30px;
+    color: #121212;
+    margin-top: -1rem;
+  }
 }

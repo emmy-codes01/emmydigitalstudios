@@ -52,38 +52,50 @@
 
 // Scroll reveal
 
-  // Initialize ScrollReveal
-  ScrollReveal().reveal('.reveal', {
-    distance: '50px',    // Distance the element moves
-    origin: 'left',    // Animation direction (bottom, top, left, right)
-    duration: 1000,      // Animation duration in milliseconds
-    delay: 200,          // Delay before the animation starts
-    easing: 'ease-in-out', // Easing function for the animation
-    reset: true          // Reset animation when element goes out of view
-  });
+// Initialize ScrollReveal
+ScrollReveal().reveal('.reveal', {
+  distance: '50px',    // Distance the element moves
+  origin: 'top',    // Animation direction (bottom, top, left, right)
+  duration: 1000,      // Animation duration in milliseconds
+  delay: 200,          // Delay before the animation starts
+  easing: 'ease-in-out', // Easing function for the animation
+  reset: true          // Reset animation when element goes out of view
+});
 
-  ScrollReveal().reveal('.revealimg', {
-    distance: '50px',    // Distance the element moves
-    origin: 'bottom',    // Animation direction (bottom, top, left, right)
-    duration: 1000,      // Animation duration in milliseconds
-    delay: 300,          // Delay before the animation starts
-    easing: 'ease-in-out', // Easing function for the animation
-    reset: true          // Reset animation when element goes out of view
-  });
+ScrollReveal().reveal('.typing-text', {
+  distance: '50px',    // Distance the element moves
+  origin: 'bottom',    // Animation direction (bottom, top, left, right)
+  duration: 1000,      // Animation duration in milliseconds
+  delay: 300,          // Delay before the animation starts
+  easing: 'ease-in-out', // Easing function for the animation
+  reset: true          // Reset animation when element goes out of view
+});
 
-  ScrollReveal().reveal('.digitalpartner', {
-    distance: '50px',    // Distance the element moves
-    origin: 'top',    // Animation direction (bottom, top, left, right)
-    duration: 1000,      // Animation duration in milliseconds
-    delay: 200,          // Delay before the animation starts
-    easing: 'ease-in-out', // Easing function for the animation
-    reset: true          // Reset animation when element goes out of view
-  });
+
+
+ScrollReveal().reveal('.note', {
+  distance: '50px',    // Distance the element moves
+  origin: 'bottom',    // Animation direction (bottom, top, left, right)
+  duration: 1000,      // Animation duration in milliseconds
+  delay: 300,          // Delay before the animation starts
+  easing: 'ease-in-out', // Easing function for the animation
+  reset: true          // Reset animation when element goes out of view
+});
+
+
+ScrollReveal().reveal('.digitalpartner', {
+  distance: '50px',    // Distance the element moves
+  origin: 'top',    // Animation direction (bottom, top, left, right)
+  duration: 1000,      // Animation duration in milliseconds
+  delay: 200,          // Delay before the animation starts
+  easing: 'ease-in-out', // Easing function for the animation
+  reset: true          // Reset animation when element goes out of view
+});
 
 
 
 //Dropdown Menu
-  
+
 // function myFunction() {
 //     var x = document.getElementById("drop");
 //     if (x.style.display === "block") {
@@ -93,31 +105,31 @@
 //     }
 //   }
 function myFunction() {
-    var x = document.getElementById("drop");
-    var menuIcon = document.getElementById("menuIcon").firstElementChild;
-    var menuContainer = document.getElementById("menuIcon");
+  var x = document.getElementById("drop");
+  var menuIcon = document.getElementById("menuIcon").firstElementChild;
+  var menuContainer = document.getElementById("menuIcon");
 
-    if (x.style.display === "block") {
-        // Animate to the menu icon (closing)
-        menuContainer.classList.add('animate-menu');
+  if (x.style.display === "block") {
+    // Animate to the menu icon (closing)
+    menuContainer.classList.add('animate-menu');
 
-        setTimeout(function () {
-            menuIcon.classList.remove('bx-x'); // Remove the close icon
-            menuIcon.classList.add('bx-menu-alt-right'); // Add the menu icon
-            menuContainer.classList.remove('animate-menu');
-        }, 400); // Match the animation duration
+    setTimeout(function () {
+      menuIcon.classList.remove('bx-x'); // Remove the close icon
+      menuIcon.classList.add('bx-menu-alt-right'); // Add the menu icon
+      menuContainer.classList.remove('animate-menu');
+    }, 400); // Match the animation duration
 
-        x.style.display = "none";
-    } else {
-        // Animate to the close icon (opening)
-        menuContainer.classList.add('animate-close');
+    x.style.display = "none";
+  } else {
+    // Animate to the close icon (opening)
+    menuContainer.classList.add('animate-close');
 
-        setTimeout(function () {
-            menuIcon.classList.remove('bx-menu-alt-right'); // Remove the menu icon
-            menuIcon.classList.add('bx-x'); // Add the close icon
-            menuContainer.classList.remove('animate-close');
-        }, 400); // Match the animation duration
+    setTimeout(function () {
+      menuIcon.classList.remove('bx-menu-alt-right'); // Remove the menu icon
+      menuIcon.classList.add('bx-x'); // Add the close icon
+      menuContainer.classList.remove('animate-close');
+    }, 400); // Match the animation duration
 
-        x.style.display = "block";
-    }
+    x.style.display = "block";
+  }
 }

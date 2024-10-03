@@ -29,6 +29,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 header {
   position: -webkit-sticky; /* For Safari */
@@ -170,7 +171,7 @@ nav ul li a:hover {
   border: 1.5px solid #fff;
 }
 
-.cta a i {
+.cta button i {
   display: inline-block;
   transform: rotate(45deg);
   font-size: 20px;
@@ -215,12 +216,14 @@ nav ul li a:hover {
 @media (max-width: 720px) {
   body {
     background-color: #e8e8e8;
+    background-size: contain;
   }
   #home {
     width: 100%;
     border-radius: 0rem;
     padding: 0;
     margin: 0;
+    height: 100vh;
   }
   header {
     gap: 2rem;
@@ -268,16 +271,14 @@ nav ul li a:hover {
     margin: 1.5rem;
     text-align: left;
     margin-bottom: 1rem;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    padding: 0.5rem 0 0.5rem 1rem;
+    border: none;
   }
   .hero .typing-text {
     text-align: left;
     font-weight: 750;
-    color: var(--background-orange-color);
-    font-size: 40px;
-    margin: 1.5rem;
+    color: var(--green-color);
+    font-size: 30px;
+    margin: 1.2rem;
   }
   .typing-text span {
     color: #fff;
@@ -289,16 +290,24 @@ nav ul li a:hover {
     text-align: left;
     font-size: 15px;
     line-height: normal;
+    font-weight: bolder;
+  }
+  .hero p span {
+    background-color: transparent;
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
   }
   .cta {
     font-size: small;
   }
   .cta #one {
     text-align: left;
-    margin-left: -9rem;
+    margin-left: -12.5rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     font-size: 15px;
-    background-color: var(--green-color);
+    margin-top: -1.5rem;
+    background-color: #e8e8e8;
+
     color: #121212;
   }
   #one i {
@@ -356,9 +365,10 @@ nav ul li a:hover {
     opacity: 1;
   }
 
-  .trust p {
-    font-size: 10px;
+  .hero .trust p {
+    font-size: 40px;
     display: none;
+    opacity: 0;
   }
   /* Container for the marquee */
   .marquee {
@@ -439,20 +449,43 @@ nav ul li a:hover {
     rotate: -90deg;
     margin-left: -5px;
   }
-
+  form {
+    margin-left: -1.4rem;
+    margin-top: 4rem;
+  }
   input,
-  select, textarea {
+  select,
+  textarea {
     padding: 1rem;
     border-radius: 20px;
     width: 300px;
     border: 1px solid #535353;
     background-color: #121212;
+    overflow: hidden;
+    resize: none;
+    color: #e8e8e8;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid #e8e8e8;
   }
   select option {
     color: #e8e8e8;
   }
-  #userInput {
+  #project {
     /* height: 300px; */
     padding-bottom: 4rem;
   }
+  form label {
+    color: #e8e8e8;
+    text-align: left;
+    display: inline-flex;
+    display: flex;
+    margin-left: 3.5rem;
+    margin-bottom: -1rem;
+  }
+
+  
+
 }
