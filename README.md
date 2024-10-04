@@ -1,2 +1,0 @@
-# EmmyDznz
-# ED-Studios
