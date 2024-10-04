@@ -133,3 +133,46 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Select the cookie consent div and accept button
+const cookieConsent = document.getElementById('cookieConsent');
+const acceptCookies = document.getElementById('acceptCookies');
+
+// Check if cookie consent has already been accepted
+window.onload = () => {
+  if (!localStorage.getItem('cookiesAccepted')) {
+    showCookieConsent();
+  }
+};
+
+// Show cookie consent with animation
+function showCookieConsent() {
+  cookieConsent.classList.add('show');
+  setTimeout(() => {
+    cookieConsent.style.display = 'block';
+  }, 50);
+}
+
+// Hide cookie consent with animation
+acceptCookies.addEventListener('click', () => {
+  cookieConsent.classList.remove('show');
+  cookieConsent.classList.add('hide');
+  setTimeout(() => {
+    cookieConsent.style.display = 'none';
+  }, 500);
+  localStorage.setItem('cookiesAccepted', 'true');
+});

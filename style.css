@@ -234,6 +234,11 @@ nav ul li a:hover {
     margin-top: -0.5rem;
     font-size: 13px;
   }
+  .hero .whyy {
+    color: #121212;
+    margin-bottom: -1rem;
+
+  }
   .git {
     display: none;
   }
@@ -245,14 +250,15 @@ nav ul li a:hover {
     margin: 2rem;
     position: absolute;
     min-width: 170px;
+    width: 190px;
     margin-left: 8.9rem;
     overflow: auto;
     z-index: 1;
     display: none;
     border-radius: 0.5rem;
     margin-top: 3rem;
-    margin-left: 5.9rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 6.5rem;
+    box-shadow: 0px 8px 16px 0px var(--green-color);
   }
 
   .marquee-content {
@@ -527,4 +533,68 @@ nav ul li a:hover {
     color: #121212;
     margin-top: -1rem;
   }
+
+
+
+
+
+
+
+  /* Basic styling for body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the cookie consent pop-up */
+.cookie-consent {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222;
+  color: white;
+  font-size: 12px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.cookie-consent p a {
+  color: var(--background-orange-color);
+}
+
+/* Button styling */
+.cookie-consent button {
+  background-color: var(--green-color);
+  color: #222;
+  border: none;
+  width: 250px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: .9rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-consent button:hover {
+  background-color: #218838;
+}
+
+/* Animations: fade-in and fade-out */
+.show {
+  display: block;
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
 }
